@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hola">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".developer"
+            android:label="Developer Info"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".feedback"
+            android:label="Feedback"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".play_songs_2"
+            android:label="Enjoy the beat"
+            android:parentActivityName=".playSongs" />
+        <activity
+            android:name=".playSongs"
+            android:label="Play Songs"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".otherApps"
+            android:label="Other Apps"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".about_app"
+            android:label="About App"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
